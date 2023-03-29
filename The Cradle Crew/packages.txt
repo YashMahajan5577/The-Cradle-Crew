@@ -1,0 +1,187 @@
+mkdir server
+mkdir client
+
+cd client
+npx create-react-app
+npm i axios
+
+cd server
+npm init -y
+npm i express mongoose cors bcrypt express-session body-parser cookie-parser jsonwebtoken
+
+npm install -D tailwindcss postcss autoprefixer framer-motion @mui/material @emotion/react @mui/icons-material @emotion/styled
+
+npx tailwindcss init -p
+
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+
+
+
+
+
+
+
+
+
+
+
+
+app.get("/api/info/parent", verifyJWT, (req, res) => {
+  const username = req.headers["username"];
+
+  ParentDetails.find({ username: username }, (err, users) => {
+    if (users.length > 0) {
+      // console.log(users[0].first_name);
+
+      res.json({ auth: true, payload: users[0] });
+    } else {
+      console.error("User not found.");
+      res.json({ auth: false, message: "User not found." });
+    }
+  });
+});
+
+// !-----------------------------------------------------------
+app.get("/api/get/parent", verifyJWT, (req, res) => {
+  const username = req.body.username;
+  // const password = req.body.password;
+
+  console.log(username);
+
+  ParentDetails.find({ username: username }, (err, users) => {
+    if (users.length > 0) {
+      console.log(users[0].first_name);
+
+      res.json({ auth: true, message: users[0] });
+    } else {
+      console.error("User not found.");
+      res.json({ auth: false, message: "User not found." });
+    }
+  });
+});
+
+
+
+
+
+
+// !-----------------------------------------------------------
+app.get("/api/get/babysitter-details", verifyJWT, (req, res) => {
+  const username = req.body.username;
+  // const password = req.body.password;
+
+  BabySitterDetails.find({ username: username }, (err, users) => {
+    if (users.length > 0) {
+      console.log(users[0].first_name);
+
+      res.json({ auth: true, message: users[0] });
+    } else {
+      console.error("User not found.");
+      res.json({ auth: false, message: "User not found." });
+    }
+  });
+});
+
+app.post("/api/add/babysitter-details", verifyJWT, async (req, res) => {
+  // token is verified and continue below code execution
+
+  const babySitterDetails = new BabySitterDetails({
+    username: req.body.username,
+    first_name: req.body.first_name,
+    last_name: req.body.last_name,
+    email: req.body.email,
+    phone: req.body.phone,
+    profile_photo: req.body.profile_photo,
+    address: req.body.address,
+    state: req.body.state,
+    city: req.body.city,
+    pin_code: req.body.pin_code,
+    pricing: req.body.pricing,
+    activities: req.body.activities,
+    services_offered: req.body.services_offered,
+    special_features: req.body.special_features,
+    gallery_photos: req.body.gallery_photos,
+    birth_date: req.body.birth_date,
+    id_proof_number_kyc: req.body.id_proof_number_kyc,
+    id_photo_kyc: req.body.id_photo_kyc,
+    about_yourself: req.body.about_yourself,
+  });
+
+  try {
+    const result = await babySitterDetails.save();
+    console.log(result);
+    res.sendStatus(200);
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(500);
+  }
+});
+
+// !-----------------------------------------------------------
+app.get("/api/get/creche-details", verifyJWT, (req, res) => {
+  const username = req.body.username;
+  // const password = req.body.password;
+
+  CrecheDetails.find({ username: username }, (err, users) => {
+    if (users.length > 0) {
+      console.log(users[0].first_name);
+
+      res.json({ auth: true, message: users[0] });
+    } else {
+      console.error("User not found.");
+      res.json({ auth: false, message: "User not found." });
+    }
+  });
+});
+
+app.post("/api/add/creche-details", verifyJWT, async (req, res) => {
+  // token is verified and continue below code execution
+
+  const crecheDetails = new CrecheDetails({
+    username: req.body.username,
+    director_name: req.body.director_name,
+    creche_name: req.body.creche_name,
+    profile_photo: req.body.profile_photo,
+    email: req.body.email,
+    phone: req.body.phone,
+    address: req.body.address,
+    state: req.body.state,
+    city: req.body.city,
+    pin_code: req.body.pin_code,
+    building: req.body.building,
+    pricing: req.body.pricing,
+    activities: req.body.activities,
+    services_offered: req.body.services_offered,
+    special_features: req.body.special_features,
+    gallery_photos: req.body.gallery_photos,
+    capacity: req.body.capacity,
+    id_proof_number_kyc: req.body.id_proof_number_kyc,
+    id_photo_kyc: req.body.id_photo_kyc,
+    daycare_license_number_kyc: req.body.daycare_license_number_kyc,
+    daycare_license_photo_kyc: req.body.daycare_license_photo_kyc,
+  });
+
+  try {
+    const result = await crecheDetails.save();
+    console.log(result);
+    res.sendStatus(200);
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(500);
+  }
+});
+
+// !----------------------------------------------------------------
+app.get("/isUserAuth", verifyJWT, (req, res) => {
+  res.json({ auth: true, message: "authenticated" });
+});
+
+// !----------------------------------------------------------------
+app.get("/login", (req, res) => {
+  if (req.session.user) {
+    res.send({ loggedIn: true, user: req.session.user[0].username });
+    // res.send({ loggedIn: true, user: req.session.user });
+  } else {
+    res.send({ loggedIn: false });
+  }
+});

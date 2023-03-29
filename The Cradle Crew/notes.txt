@@ -1,0 +1,32 @@
+
+A. Start Server
+    1. create new terminal
+    2. run command `cd server`
+    3. run command `npm install`
+    4. run command `node index.js`
+    5. server will start and data base connect itself
+
+B. Start App
+    1. create new terminal
+    2. cd client
+    3. run command `npm install`
+    4. run command `npm start`
+    5. application will start in default browser
+
+
+
+1. Explore - babysiiter map (search optional)
+2. all links of navbar - done
+3. validation - done
+4. delete user, counter - admin 
+5. creche CCTV button - hiroku wali link - done
+6. babysitter start conference button remove - done
+
+
+Home Page : http://localhost:3000/
+Parent Registration Page : http://localhost:3000/reg/parent
+Parent Dashboard Page : http://localhost:3000/dashboard/parent
+
+admin login -   email: admin@gmail.com 
+                password: admin123
+

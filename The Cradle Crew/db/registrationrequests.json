@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63307e73959b7c0c1bc5c760"
+  },
+  "username": "johndoe123",
+  "data": [
+    {
+      "username": "johndoe123",
+      "password": "$2b$10$Cu1zxKRFJhDQjeUiaKjfMODwaMvu44e8m8U6dWiv4uv0YQitHImK.",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johndoe123@email.com",
+      "phone": "0123456789",
+      "profile_photo": "https://randomuser.me/api/portraits/lego/3.jpg",
+      "address": "some fake address",
+      "state": "some state",
+      "city": "some fake city",
+      "pin_code": "416001",
+      "pricing": "750",
+      "activities": "some activity",
+      "services_offered": "some service",
+      "special_features": "some special feature",
+      "birth_date": "12-02-2001",
+      "identity_number": "8r0r567",
+      "identity_photo": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "about_yourself": "some fake information about my self."
+    }
+  ],
+  "type": "BABYSITTER",
+  "__v": 0
+}]

@@ -1,0 +1,204 @@
+{
+  "info": {
+    "_postman_id": "f9d7f1bd-db1a-4ec4-a999-fdc646a7d549",
+    "name": "babysitter-website",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://localhost:3001/api/request/new/parent",
+      "id": "4e562c4e-b26f-4ad7-9606-3fe489711451",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"aaaa\",\r\n    \"password\": \"aaaa\",\r\n    \"first_name\": \"First Name\",\r\n    \"last_name\": \"Last Name\",\r\n    \"contact_info\": \"Some Contact Info\",\r\n    \"email\": \"example@email.com\",\r\n    \"phone\": \"0123456789\",\r\n    \"address\": \"some fake addremm\",\r\n    \"state\": \"Maharashtra\",\r\n    \"city\": \"Kolhapur\",\r\n    \"pin_code\": \"416001\",\r\n    \"building\": \"AAA\",\r\n    \"kids_info\": \"I got a lot of kids\",\r\n    \"kids_array\": [\r\n        {\r\n            \"child_first_name\": \"Jon\",\r\n            \"child_last_name\": \"Rik\",\r\n            \"child_dob\": \"13-04-2019\",\r\n            \"child_age\": \"3\"\r\n        },\r\n        {\r\n            \"child_first_name\": \"Juel\",\r\n            \"child_last_name\": \"Rik\",\r\n            \"child_dob\": \"21-02-2020\",\r\n            \"child_age\": \"2\"\r\n        }\r\n    ],\r\n    \"profile_photo\": \"https://randomuser.me/api/portraits/lego/5.jpg\",\r\n    \"identity_photo\" : \"https://randomuser.me/api/portraits/lego/5.jpg\",\r\n    \"identity_number\": \"90100010\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/request/new/parent"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/request/new/babysitter",
+      "id": "d5f7146d-a4d1-4330-9e9e-6c1788a1cdf4",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"iambabysitter6\",\r\n  \"password\": \"iambabysitter6\",\r\n  \"first_name\": \"Baby\",\r\n  \"last_name\": \"Sitter\",\r\n  \"email\": \"example@email.com\",\r\n  \"phone\": \"0123456789\",\r\n  \"profile_photo\": \"https://randomuser.me/api/portraits/lego/7.jpg\",\r\n  \"address\": \"some fake addremm\",\r\n  \"state\": \"Maharashtra\",\r\n  \"city\": \"Kolhapur\",\r\n  \"pin_code\": \"416001\",\r\n  \"pricing\": \"450\",\r\n  \"activities\": [\r\n    \"some activity\",\r\n    \"some another\",\r\n    \"and another\"\r\n  ],\r\n  \"services_offered\": [\r\n    \"I do this\",\r\n    \"i also do this\",\r\n    \"and this also\"\r\n  ],\r\n  \"special_features\": [\r\n    \"i can do yoga\",\r\n    \"I can dance\",\r\n    \"I an good at playing\"\r\n  ],\r\n  \"gallery_photos\": [\r\n    \"https://randomuser.me/api/portraits/lego/3.jpg\",\r\n    \"https://randomuser.me/api/portraits/lego/6.jpg\",\r\n    \"https://randomuser.me/api/portraits/lego/5.jpg\",\r\n    \"https://randomuser.me/api/portraits/lego/8.jpg\"\r\n  ],\r\n  \"birth_date\": \"01.02.1003\",\r\n  \"identity_number\": \"0123456789\",\r\n  \"identity_photo\": \"https://randomuser.me/api/portraits/lego/7.jpg\",\r\n  \"about_yourself\": \"I will take good care of your child. please hire me.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/request/new/babysitter"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/request/new/creche",
+      "id": "7d6ac99d-f705-4113-8a5f-552f27e8ddf5",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"creche4\",\r\n  \"password\": \"ccc\",\r\n  \"director_name\": \"Big Boss\",\r\n  \"creche_name\": \"Big Boss Sitter\",\r\n  \"profile_photo\": \"https://randomuser.me/api/portraits/lego/7.jpg\",\r\n  \"email\": \"example@email.com\",\r\n  \"phone\": \"0123456789\",\r\n  \"address\": \"some fake addremm\",\r\n  \"state\": \"Maharashtra\",\r\n  \"city\": \"Kolhapur\",\r\n  \"pin_code\": \"416001\",\r\n  \"pricing\": \"450\",\r\n  \"activities\": [\r\n    \"some activity\",\r\n    \"some another\",\r\n    \"and another\"\r\n  ],\r\n  \"services_offered\": [\r\n    \"I do this\",\r\n    \"i also do this\",\r\n    \"and this also\"\r\n  ],\r\n  \"special_features\": [\r\n    \"i can do yoga\",\r\n    \"I can dance\",\r\n    \"I an good at playing\"\r\n  ],\r\n  \"gallery_photos\": [\r\n    \"https://randomuser.me/api/portraits/lego/3.jpg\",\r\n    \"https://randomuser.me/api/portraits/lego/6.jpg\",\r\n    \"https://randomuser.me/api/portraits/lego/5.jpg\",\r\n    \"https://randomuser.me/api/portraits/lego/8.jpg\"\r\n  ],\r\n  \"lat\": \"18.525590\",\r\n  \"long\": \"73.853012\",\r\n  \"capacity\": \"30\",\r\n  \"identity_number\": \"0123456789\",\r\n  \"identity_photo\": \"https://randomuser.me/api/portraits/lego/5.jpg\",\r\n  \"about_yourself\": \"I will take good care of your child. please hire me.\",\r\n  \"daycare_license_number_kyc\": \"9100923\",\r\n  \"daycare_license_photo_kyc\": \"https://randomuser.me/api/portraits/lego/5.jpg\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/request/new/creche"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/get/admin/requests",
+      "id": "c6d748bf-a53e-4758-b260-a4b6e549f0a4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"username\": \"aaa\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/get/admin/requests"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/put/admin/requests",
+      "id": "ac8663db-4559-45ca-a46c-b5b9439bd83f",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"creche3\",\r\n    \"action\": \"1\" \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/put/admin/requests"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/info/",
+      "id": "6324a056-3022-47b2-a317-a9ca2a96f869",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-access-token",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMWY2Zjg5NWQxYWZmZTBkMjFhYmIxMSIsImlhdCI6MTY2MzEzNjAwMCwiZXhwIjoxNjYzMzA4ODAwfQ.IOp5AvR929F9sUv94LWv4wo2aQWR5bArTTLPrxIoA9Y",
+            "type": "text",
+            "description": "auth token is required to get user details"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"aaa\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/info"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/login",
+      "id": "bc5fdc5e-1d5f-4f43-95cf-62f1ecff7363",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"admin@gmail.com\",\r\n    \"password\": \"admin123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3001/api/login"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/request/get/babysitter",
+      "id": "3b729a19-d0d8-4e6f-a077-b856e0d3edd1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3001/api/request/get/babysitter",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "request", "get", "babysitter"],
+          "query": [
+            {
+              "key": "username",
+              "value": "iambabysitter",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:3001/api/request/get/creche?lat=18.525590&long=73.853012",
+      "id": "cf6d5fdd-0ff2-4948-8e1c-31fdf87f4a58",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3001/api/request/get/creche?lat=19.67757828130309&long=79.13348947597314",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3001",
+          "path": ["api", "request", "get", "creche"],
+          "query": [
+            {
+              "key": "lat",
+              "value": "19.67757828130309"
+            },
+            {
+              "key": "long",
+              "value": "79.13348947597314"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

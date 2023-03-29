@@ -1,0 +1,187 @@
+[{
+  "_id": {
+    "$oid": "631f6f895d1affe0d21abb11"
+  },
+  "username": "admin@gmail.com",
+  "password": "$2b$10$aHxogOGZUjB.hGg6Y3HpeeRjZF533JGro/7c8KqDEKVgxn1CQss3m",
+  "type": "ADMIN",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63309a9b440b004538fff830"
+  },
+  "username": "crooks",
+  "password": "$2b$10$HE64EZW9NqVIB5XK8.uRv.CekLSlZ6fcZSTt7vfoqX.SG.Dp8uvGW",
+  "data": [
+    {
+      "username": "crooks",
+      "data": [
+        {
+          "username": "crooks",
+          "password": "$2b$10$HE64EZW9NqVIB5XK8.uRv.CekLSlZ6fcZSTt7vfoqX.SG.Dp8uvGW",
+          "director_name": "Izaiah Crooks",
+          "creche_name": "Crooks",
+          "profile_photo": "https://randomuser.me/api/portraits/men/72.jpg",
+          "email": "johndoe123@email.com",
+          "phone": "0123456789",
+          "address": "4379 Kaden Burgs Suite 047 Watersmouth, MA 28947-6219",
+          "state": "Watersmouth",
+          "city": "Kaden Burgs",
+          "pin_code": "416001",
+          "pricing": "800",
+          "activities": "some activity",
+          "services_offered": "some service",
+          "special_features": "some special feature",
+          "gallery_photos": [
+            "https://static.toiimg.com/thumb/msid-61329044,width-400,resizemode-4/61329044.jpg",
+            "https://image.shutterstock.com/image-photo/little-children-girl-boy-molding-260nw-1351172495.jpg",
+            "https://thumbs.dreamstime.com/b/young-african-kids-small-creche-daycare-preschool-johannesburg-south-africa-june-181063838.jpg",
+            "https://i.pinimg.com/originals/53/3f/96/533f960e877785d5ce92aaceb1aad008.jpg"
+          ],
+          "lat": -34.397,
+          "long": 150.644,
+          "capacity": "20",
+          "identity_number": "805672432",
+          "identity_photo": "https://randomuser.me/api/portraits/men/72.jpg",
+          "daycare_license_number_kyc": "909323454234",
+          "daycare_license_photo_kyc": "https://randomuser.me/api/portraits/men/72.jpg"
+        }
+      ],
+      "type": "CRECHE"
+    }
+  ],
+  "type": "CRECHE",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6331219166a27ae543697a5d"
+  },
+  "username": "melyna",
+  "password": "$2b$10$jrOUOZBEZTcipdzb3.50TeLwjEWo35U7oWuhLZxW9L8HSUaOVF9IW",
+  "data": [
+    {
+      "username": "melyna",
+      "data": [
+        {
+          "username": "melyna",
+          "password": "$2b$10$jrOUOZBEZTcipdzb3.50TeLwjEWo35U7oWuhLZxW9L8HSUaOVF9IW",
+          "first_name": "Prof. Melyna ",
+          "last_name": "Kreiger",
+          "contact_info": "some contact information",
+          "email": "melyna@email.com",
+          "phone": "123324324",
+          "address": "750 Metz Forges Cormiermouth, NV 28660",
+          "state": "Cormiermouth",
+          "city": "Forges",
+          "pin_code": "416001",
+          "building": "Building Name",
+          "kids_info": "I have two children and they are smart.",
+          "kids_array": [
+            {
+              "id": "d47ffa90-7414-4a55-ad99-1b7e4c66dbd4",
+              "firstName": "Carolin",
+              "dob": "2022-09-06",
+              "age": "10"
+            },
+            {
+              "id": "68da502f-bd5b-4d0b-b39c-4cc1a04be223",
+              "firstName": "Mandie",
+              "dob": "2022-09-16",
+              "age": "2"
+            }
+          ],
+          "profile_photo": "https://randomuser.me/api/portraits/women/44.jpg",
+          "identity_photo": "https://randomuser.me/api/portraits/women/44.jpg",
+          "identity_number": "0123456789"
+        }
+      ],
+      "type": "PARENT"
+    }
+  ],
+  "type": "PARENT",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6331eca5266e72eb3e8d207e"
+  },
+  "username": "alison",
+  "password": "$2b$10$4StmGqSh/Sm55mCbrgV9K.ixdTKFgdERLZas36TvddnO/5jn2HXZC",
+  "data": [
+    {
+      "username": "alison",
+      "data": [
+        {
+          "username": "alison",
+          "password": "$2b$10$4StmGqSh/Sm55mCbrgV9K.ixdTKFgdERLZas36TvddnO/5jn2HXZC",
+          "first_name": "Alison ",
+          "last_name": "Witting",
+          "email": "alison@email.com",
+          "phone": "2143214324",
+          "profile_photo": "https://randomuser.me/api/portraits/women/14.jpg",
+          "address": "60571 Mervin Square Gottliebfort, FL 71074-0019",
+          "state": "Gottliebfort",
+          "city": "Mervin ",
+          "pin_code": "416001",
+          "pricing": "300",
+          "activities": "Playing",
+          "services_offered": "Good babysitter care",
+          "special_features": "Teaching",
+          "gallery_photos": null,
+          "birth_date": "2022-09-07",
+          "identity_number": "2134344343",
+          "identity_photo": "https://randomuser.me/api/portraits/women/14.jpg",
+          "about_yourself": "some fake information about my self. and some other info"
+        }
+      ],
+      "type": "BABYSITTER"
+    }
+  ],
+  "type": "BABYSITTER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6331fa3c3f945c4f70ae19b0"
+  },
+  "username": "somerandomuser",
+  "password": "$2b$10$fr4IhD4mKyNylL.5bBcvpOMgqCHUYHNd7n9oiZgLFLQhvXL19Hosi",
+  "data": [
+    {
+      "_id": {
+        "$oid": "6331f9d93f945c4f70ae19aa"
+      },
+      "username": "somerandomuser",
+      "data": [
+        {
+          "username": "somerandomuser",
+          "password": "$2b$10$fr4IhD4mKyNylL.5bBcvpOMgqCHUYHNd7n9oiZgLFLQhvXL19Hosi",
+          "first_name": "John",
+          "last_name": "Doe",
+          "contact_info": "some contact information",
+          "email": "johndoe123@email.com",
+          "phone": "0123456789",
+          "address": "some fake address",
+          "state": "some state",
+          "city": "some fake city",
+          "pin_code": "416001",
+          "building": "Building Name",
+          "kids_info": "I have so many kids, please take care of them",
+          "kids_array": [
+            {
+              "id": "7fe3acf6-fc45-4c38-8fa0-b4aad0315f6c",
+              "firstName": "Leonie",
+              "dob": "2018-10-18",
+              "age": "1"
+            }
+          ],
+          "profile_photo": "https://randomuser.me/api/portraits/men/61.jpg",
+          "identity_photo": "https://randomuser.me/api/portraits/men/61.jpg",
+          "identity_number": "0123456789"
+        }
+      ],
+      "type": "PARENT",
+      "__v": 0
+    }
+  ],
+  "type": "PARENT",
+  "__v": 0
+}]

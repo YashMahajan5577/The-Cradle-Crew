@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "63314b1b2c17b99e4e454f7a"
+  },
+  "username": "alison",
+  "appointments": [
+    {
+      "username": "melyna",
+      "password": "$2b$10$jrOUOZBEZTcipdzb3.50TeLwjEWo35U7oWuhLZxW9L8HSUaOVF9IW",
+      "first_name": "Prof. Melyna ",
+      "last_name": "Kreiger",
+      "contact_info": "some contact information",
+      "email": "melyna@email.com",
+      "phone": "1-628-013-065",
+      "address": "750 Metz Forges Cormiermouth, NV 28660",
+      "state": "Cormiermouth",
+      "city": "Forges",
+      "pin_code": "416001",
+      "building": "Building Name",
+      "kids_info": "I have two children and they are smart.",
+      "kids_array": [
+        {
+          "id": "d47ffa90-7414-4a55-ad99-1b7e4c66dbd4",
+          "firstName": "Carolin",
+          "dob": "15/7/2017",
+          "age": "2"
+        },
+        {
+          "id": "68da502f-bd5b-4d0b-b39c-4cc1a04be223",
+          "firstName": "Mandie",
+          "dob": "1/8/2015",
+          "age": "2"
+        }
+      ],
+      "profile_photo": "https://randomuser.me/api/portraits/women/44.jpg",
+      "identity_photo": "https://randomuser.me/api/portraits/women/44.jpg",
+      "identity_number": "0123456789",
+      "date": 0,
+      "time": 0,
+      "hours": 5,
+      "accepted": false
+    }
+  ],
+  "__v": 0
+}]
